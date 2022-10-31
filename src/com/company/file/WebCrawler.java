@@ -21,7 +21,6 @@ public class WebCrawler {
             if (!listOfTraversedURLs.contains(urlString)) {
                 listOfTraversedURLs.add(urlString);
                 System.out.println("Craw " + urlString);
-
                 for (String s: getSubURLs(urlString)) {
                     if (!listOfTraversedURLs.contains(s))
                         listOfPendingURLs.add(s);
